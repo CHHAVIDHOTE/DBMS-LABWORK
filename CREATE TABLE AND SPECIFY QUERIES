@@ -1,0 +1,28 @@
+                  1. Create Table and insert values in TABLE
+
+      CREATE TABLE STUDENT(STUDENT_ID INT,FIRST_NAME varchar(50),LAST_NAME varchar(50),CITY varchar(50));
+  
+      INSERT INTO STUDENT (STUDENT_ID,FIRST_NAME,LAST_NAME,CITY,)
+      VALUES
+             ( 1, "AMAN" , "DUBEY"  , " BETUL" ) ,
+             ( 2, "BHAVESH" , "MISHRA"   , "BETUL" ),    
+             ( 3, "CHHAVI" , "DHOTE"  , "BETUL") ,   
+             ( 4, "DEV" , "PATEL", "BETUL"),
+             ( 5, "RAJAT" , "BORDE" , "BETUL") ;     
+      
+	   
+
+      SELECT * FROM STUDENT;
+
+
+      | STUDENT_ID  | FIRST_NAME  | LAST_NAME   | CITY  | 
+      +-------------+-------------+-------------+-------+
+      |         1   | AMAN        | DUBEY       | BETUL | 
+      |         2   | BHAVESH     | MISHRA      | BETUL | 
+      |         3   | CHHAVI      | DHOTE       | BETUL | 
+      |         4   | DEV         | PATEL       | BETUL | 
+      |         5   | RAJAT       | BORDE       | BETUL | 
+      
+
+     
+
