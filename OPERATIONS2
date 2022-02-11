@@ -1,0 +1,24 @@
+ALTER TABLE STUDENT
+        ADD COLUMN GENDER VARCHAR(50);
+    
+
+       SELECT * FROM STUDENT;
+      | STUDENT_ID  | FIRST_NAME  | LAST_NAME   | CITY  | GENDER  |
+      +-------------+-------------+-------------+-------+---------+
+      |         1   | AMAN        | DUBEY       | BETUL |         | 
+      |         2   | BHAVESH     | MISHRA      | BETUL |         |
+      |         3   | CHHAVI      | DHOTE       | BETUL |         |  
+      |         4   | DEV         | PATEL       | BETUL |         |
+      |         5   | RAJAT       | BORDE       | BETUL |         |
+    
+    ALTER TABLE STUDENT
+    DROP COLUMN CITY;
+    SELECT * FROM STUDENT:   
+      | STUDENT_ID  | FIRST_NAME  | LAST_NAME   | GENDER   |
+      +-------------+-------------+-------------+----------+
+      |         1   | AMAN        | DUBEY       |          | 
+      |         2   | BHAVESH     | MISHRA      |          |
+      |         3   | CHHAVI      | DHOTE       |          |  
+      |         4   | DEV         | PATEL       |          |
+      |         5   | RAJAT       | BORDE       |          |
+    
