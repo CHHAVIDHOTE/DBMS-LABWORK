@@ -1,0 +1,32 @@
+3. TO ADD RECTRITIONS ON TABLES
+           
+                          #TO ADD PRIMARY KEY AND NOT NULL CONSTRAINTS
+            CREATE TABLE Teacher (
+                   Teacher_id INT PRIMARY KEY,
+                   Teacher_name VARCHAR(255),
+                   Date_of_Birth DATE NOT NULL,
+                  Dept_id NOT NULL,
+                  Dept_name NOT NULL);
+
+                     # TO ADD FOREIGN KEY AND UNIQUE CONSTRSINT
+            
+            CREATE TABLE Teacher(
+                      Teacher_id INT AUTO_INCREMENT PRIMARY KEY,
+                      Teacher_name VARCHAR(255),
+                      Date_of_Birth DATE NOT NULL,
+                      dept_id NOT NULL,Dept_name NOT NULL);
+
+         CREATE TABLE Teacher_department(
+                     department_id INT AUTO_INCREMENT PRIMARY KEY,
+                     Teacher_id INT UNIQUE,
+                     department_name VARCHAR(100));
+
+      
+
+
+          CREATE TABLE Teacher_department (
+                       department_id INT AUTO_INCREMENT PRIMARY KEY,
+                       teacher_id INT,
+                       department_name VARCHAR(100),
+                       FOREIGN KEY (teacher_id) REFERENCES Teacher (Teacher_id));
+                                                            
