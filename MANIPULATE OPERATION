@@ -1,0 +1,32 @@
+           2 TO MANIPULATE THE OPERATIONS ON THE TABLE
+
+
+              UPDATE STUDENT SET last_name = " SAHU"
+              WHERE STUDENT_ID = 1 ;
+
+
+
+           SELECT * FROM TABLE STUDENT;
+           
+      | STUDENT_ID  | FIRST_NAME  | LAST_NAME   | CITY  | 
+      +-------------+-------------+-------------+-------+
+      |         1   | AMAN        | SAHU       | BETUL | 
+      |         2   | BHAVESH     | MISHRA      | BETUL | 
+      |         3   | CHHAVI      | DHOTE       | BETUL | 
+      |         4   | DEV         | PATEL       | BETUL | 
+      |         5   | RAJAT       | BORDE       | BETUL |
+      
+      DELETE FROM STUDENT WHERE STUDENT_ID= 4 ;
+
+      
+       SELECT * FROM TABLE STUDENT;
+
+      
+       | STUDENT_ID  | FIRST_NAME  | LAST_NAME   | CITY  | 
+      +-------------+-------------+-------------+-------+
+      |         1   | AMAN        | DUBEY       | BETUL | 
+      |         2   | BHAVESH     | MISHRA      | BETUL | 
+      |         3   | CHHAVI      | DHOTE       | BETUL | 
+       
+      |         5   | RAJAT       | BORDE       | BETUL | 
+      
