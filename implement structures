@@ -1,0 +1,42 @@
+4.TO IMPLEMENT STRUCTURE OF TABLE
+
+
+                # DELETING TABLE 
+      CREATE TABLE Student1(Student_id INT,First_Name varchar(50),Last_Name varchar(50),city varchar(50));
+  
+      INSERT INTO Student1(Student_id ,First_Name ,Last_Name ,city )
+
+  
+      VALUES
+             ( 100, 'Dev' ,  'Sahu '  , 'betul' ) ,     
+             ( 101,' Ramji ', ' Mishra'   , 'betul'  ),    
+     
+        SELECT * FROM student1;
+        STUDENT_ID  | FIRST_NAME  | LAST_NAME   | CITY  | 
+      +-------------+-------------+-------------+-------+
+      |         100   | dev        | sahu       | BETUL | 
+      |         101   | ramji    | Mishra      | BETUL | 
+       
+      
+      
+     DROP TABLE Student1;
+     SELECT * FROM Student1;
+        
+                 ---------------------------------------------------
+
+      
+
+                              # TO ADD FOREIGN KEY AND REMOVE 
+         
+         ALTER TABLE Teacher
+         ADD PRIMARY KEY (Teacher_id);
+        
+         ALTER TABLE Teacher
+         DROP PRIMARY KEY;
+                               #TO ADD AND REMOVE FOREIGN KEY
+          ALTER TABLE Teacher_Department
+         ADD  FOREIGN KEY(dept_id)
+         REFERENCES Teacher(Teacher_id);
+    
+         ALTER TABLE Teacher_department
+         DROP FOREIGN KEY(dept_id);
